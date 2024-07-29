@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Full Service Digital Agency | Cambridgeshire &amp; Norfolk |
+			Netmatters
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Netmatter's online website and support. Technology leaders and telecoms services"
+		/>
+		<!-- importing Poppins from google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+			media="print"
+			onload="this.media='all'"
+		/>
+		<noscript>
+			<link
+				href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+				rel="stylesheet"
+				type="text/css"
+			/>
+		</noscript>
+		<!-- importing stylesheet -->
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="container" id="header-cont-1">
+				<picture>
+					<source
+						type="image/webp"
+						srcset="img/webp/logo_main.webp"
+					/>
+					<img
+						alt="netmatters logo"
+						src="img/logo_main.png"
+						width="402"
+						height="70"
+					/>
+				</picture>
+
+				<!-- Support button -->
+				<button class="blue hidden_button">
+					<svg
+						viewBox="0 0 1381 1075.597"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill="#fff"
+							d="M470 67v338H170q0-65 23-123t63.5-103.5Q297 133 352 104t118-37zM170 661V491h684v170q0 71-27 133t-73.5 108.5Q707 949 645 976t-133 27q-70 0-133-27-62-27-108.5-73.5T197 794q-27-62-27-133zM554 67q63 8 118 37 54 29 94.5 74.5T831 282q23 58 23 123H554V67z"
+						/>
+					</svg>
+					Support
+				</button>
+
+				<!-- Contact button -->
+				<button class="grey hidden_button">
+					<svg
+						viewBox="0 0 1381 1075.597"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill="#fff"
+							d="M1009 5q-4-2-8-3.5T992 0q-5 0-9.5 1.5T974 5L14 645q-7 5-11 13t-3 17q1 9 6.5 16T20 702l250 100 118 206q4 7 11.5 11.5t16.5 4.5q8 0 15.5-4t11.5-12l67-110 310 124q3 1 6 1.5t6 .5q4 0 8-1t8-3q6-4 10-10t6-13l160-960q1-9-3-18t-12-14zM100 665l742-495-539 578q-2-2-4-3.5t-5-2.5l-194-77zm226 105l606-649-517 805-89-156zm481 177L534 838q-5-2-10-2.5t-10-1.5l421-652-128 765z"
+						/>
+					</svg>
+					Contact
+				</button>
+
+				<!-- Search box. Hidden/revealed by media queries -->
+				<input type="search" placeholder="Search..." />
+
+				<!-- Search button -->
+				<button id="search" class="grey button-box">
+					<span class="icon-search"></span>
+				</button>
+
+				<!-- Call link. Phone icon -->
+				<a id="phone"></a>
+
+				<!-- Nav button. Functionality requires js -->
+				<nav>
+					<button onclick="navbarToggle()" class="button-box">
+						<span class="icon-nav" id="icon-nav"></span>
+					</button>
+				</nav>
+
+				<!-- 2nd Search box. Hidden/revealed by media queries -->
+				<form>
+					<input type="search" placeholder="Search..." />
+					<span class="icon-search2"></span>
+				</form>
+			</div>
+			<!-- Banner element. Hidden/revealed by media queries -->
+			<aside>
+				<div class="container" id="header-cont-2">
+					<div class="banner_item" id="banner-1">
+						<span id="icon-banner-1"></span>
+						<h3>Bespoke</h3>
+						<h2>Software</h2>
+					</div>
+
+					<div class="banner_item" id="banner-2">
+						<span id="icon-banner-2"></span>
+						<h3>IT</h3>
+						<h2>Support</h2>
+					</div>
+
+					<div class="banner_item" id="banner-3">
+						<span id="icon-banner-3"></span>
+						<h3>Digital</h3>
+						<h2>Marketing</h2>
+					</div>
+
+					<div class="banner_item" id="banner-4">
+						<span id="icon-banner-4"></span>
+						<h3>Telecoms</h3>
+						<h2>Services</h2>
+					</div>
+
+					<div class="banner_item" id="banner-5">
+						<span id="icon-banner-5"></span>
+						<h3>Web</h3>
+						<h2>Design</h2>
+					</div>
+
+					<div class="banner_item" id="banner-6">
+						<span id="icon-banner-6"></span>
+						<h3>Cyber</h3>
+						<h2>Security</h2>
+					</div>
+
+					<div class="banner_item" id="banner-7">
+						<span id="icon-banner-7"></span>
+						<h3>Developer</h3>
+						<h2>Course</h2>
+					</div>
+				</div>
+
+				<!-- Subheaders -->
+				<div class="banner_hidden" id="banner-1b">
+					<h2>Our Bespoke Software Services</h2>
+					<span></span><a href="#">Bespoke CRM</a> <span></span
+					><a href="#">Business Automation</a> <span></span
+					><a href="#">Software Integrations</a> <span></span
+					><a href="#">Mobile App Development</a> <span></span
+					><a href="#">Bespoke Databases</a> <span></span
+					><a href="#">Sharepoint Development</a> <span></span
+					><a href="#">Operational Systems</a> <span></span
+					><a href="#">Business Central Implementation</a>
+					<span></span
+					><a href="#">Internet of Things (IoT) Software</a>
+					<span></span><a href="#">Intranet Development</a>
+					<span></span><a href="#">Customer Portal Development</a>
+					<span></span><a href="#">Reporting Hub</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-2b">
+					<h2>Our IT Support Services</h2>
+					<span></span><a href="#">Managed IT Support</a> <span></span
+					><a href="#">Business IT Support</a> <span></span
+					><a href="#">Office 365 for Business</a> <span></span
+					><a href="#">IT Consultancy</a> <span></span
+					><a href="#">Cloud Service Provider</a> <span></span
+					><a href="#">Data Backup & Disaster Recovery</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-3b">
+					<h2>Our Digital Marketing Services</h2>
+					<span></span
+					><a href="#">Search Engine Optimisation<br />(SEO)</a>
+					<span></span
+					><a href="#">Pay Per Click Advertising<br />(PPC)</a>
+					<span></span
+					><a href="#">Conversion Rate Optimisation<br />(CRO)</a>
+					<span></span><a href="#">Email Marketing</a> <span></span
+					><a href="#">Social Media Marketing</a> <span></span
+					><a href="#">Content Marketing</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-4b">
+					<h2>Our Telecoms Services</h2>
+					<span></span><a href="#">Business Mobile</a> <span></span
+					><a href="#">Hosted VoIP Provider</a> <span></span
+					><a href="#">Business VoIP Systems</a> <span></span
+					><a href="#">Business Broadband</a> <span></span
+					><a href="#">Leased Lines Provider</a> <span></span
+					><a href="#">3CX Systems</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-5b">
+					<h2>Our Web Design Services</h2>
+					<span></span><a href="#">Bespoke Website Design</a>
+					<span></span><a href="#">eCommerce Website Design</a>
+					<span></span><a href="#">Pay Monthly Websites</a>
+					<span></span><a href="#">Branding & Design</a> <span></span
+					><a href="#">Mobile App Development</a> <span></span
+					><a href="#">Web Hosting</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-6b">
+					<h2>Our Cyber Security Services</h2>
+					<span></span><a href="#">Cyber Security Assessment</a>
+					<span></span><a href="#">Cyber Security Management</a>
+					<span></span><a href="#">Cyber Penetration Testing</a>
+					<span></span><a href="#">Cyber Essentials Certification</a>
+					<span></span><a href="#">PCI Compliance</a> <span></span
+					><a href="#">Hacking Prevention</a>
+				</div>
+
+				<div class="banner_hidden" id="banner-7b">
+					<h2>Our Developer Course Services</h2>
+					<span></span><a href="#">Train For A Career In Tech</a>
+					<span></span><a href="#">Skills Bootcamp</a> <span></span
+					><a href="#">Scion Scheme Frequently Asked Questions</a>
+					<span></span><a href="#">Scion Collaborators</a>
+				</div>
+			</aside>
+		</header>
+
+		<main>
+			<!-- nav menu -->
+			<div id="navbar">
+				<div id="mobile-nav">
+					<button>Contact us</button>
+					<button>Bespoke software</button>
+					<div>
+						<ul>
+							<li><a>Bespoke CRM</a></li>
+							<li><a>Business automation</a></li>
+							<li><a>Software integrations</a></li>
+							<li><a>Mobile app development</a></li>
+							<li><a>Bespoke databases</a></li>
+							<li><a>Sharepoint development</a></li>
+							<li><a>Operational systems</a></li>
+							<li><a>Business central implementation</a></li>
+							<li><a>Internet of Things (IoT) Software</a></li>
+							<li><a>Intranet development</a></li>
+							<li><a>Customer Portal development</a></li>
+							<li><a>Reporting hub</a></li>
+						</ul>
+					</div>
+					<button>IT support</button>
+					<div>
+						<ul>
+							<li><a>Managed IT support</a></li>
+							<li><a>Business IT support</a></li>
+							<li><a>Office 365 for business</a></li>
+							<li><a>IT consultancy</a></li>
+							<li><a>Cloud service provider</a></li>
+							<li><a>Data backup &amp; disaster recovery</a></li>
+						</ul>
+					</div>
+					<button>Digital marketing</button>
+					<div>
+						<ul>
+							<li><a>Search engine optimisation (SEO)</a></li>
+							<li><a>Pay per click advertising (ppc)</a></li>
+							<li><a>Conversion rate optimisation (CRO)</a></li>
+							<li><a>Email marketing</a></li>
+							<li><a>Social media marketing</a></li>
+							<li><a>Content marketing</a></li>
+						</ul>
+					</div>
+					<button>telecoms services</button>
+					<div>
+						<ul>
+							<li><a>business mobile</a></li>
+							<li><a>hosted voip provider</a></li>
+							<li><a>business voip systems</a></li>
+							<li><a>business broadband</a></li>
+							<li><a>Leased lines provider</a></li>
+							<li><a>3cx systems</a></li>
+						</ul>
+					</div>
+					<button>Web design</button>
+					<div>
+						<ul>
+							<li><a>Bespoke web design</a></li>
+							<li><a>Ecommerce website design</a></li>
+							<li><a>Pay monthly websites</a></li>
+							<li><a>Branding &amp; design</a></li>
+							<li><a>Mobile app development</a></li>
+							<li><a>Web hosting</a></li>
+						</ul>
+					</div>
+					<button>Cyber security</button>
+					<div>
+						<ul>
+							<li><a>Cyber security assessment</a></li>
+							<li><a>Cyber security management</a></li>
+							<li><a>Cyber penetration testing</a></li>
+							<li><a>Cyber essentials certificate</a></li>
+							<li><a>PCI compliance</a></li>
+							<li><a>Hacking prevention</a></li>
+						</ul>
+					</div>
+					<button>developer course</button>
+					<div>
+						<ul>
+							<li><a>Train for a career in tech</a></li>
+							<li><a>skills bootcamp</a></li>
+							<li>
+								<a>scion scheme frequently asked questions</a>
+							</li>
+							<li><a>Scion collaborators</a></li>
+						</ul>
+					</div>
+				</div>
+				<h2><a>Services</a></h2>
+				<ul>
+					<li><a>Bespoke software</a></li>
+					<li><a>IT support</a></li>
+					<li><a>Digital marketing</a></li>
+					<li><a>Telecoms services</a></li>
+					<li><a>Web design</a></li>
+					<li><a>Cyber security</a></li>
+				</ul>
+				<h2><a>Our work</a></h2>
+				<ul>
+					<li><a>Case studies</a></li>
+					<li><a>Our digital marketing clients</a></li>
+					<li><a>Our website clients</a></li>
+					<li><a>Our IT clients</a></li>
+					<li><a>Our bespoke software clients</a></li>
+					<li><a>Our telecoms clients</a></li>
+				</ul>
+				<h2><a>Our knowledge</a></h2>
+				<ul>
+					<li><a>Technologies</a></li>
+					<li><a>Industries</a></li>
+					<li><a>News</a></li>
+					<li><a>Insights</a></li>
+				</ul>
+				<h2><a>Training</a></h2>
+				<ul>
+					<li><a>Train for a career in tech</a></li>
+					<li><a>Skills bootcamp</a></li>
+					<li><a>SCS frequently asked questions</a></li>
+					<li><a>Scion collaborators</a></li>
+				</ul>
+				<h2><a>Our company</a></h2>
+				<ul>
+					<li><a>Why choose us?</a></li>
+					<li><a>Our culture</a></li>
+					<li><a>Our team</a></li>
+					<li><a>Our careers</a></li>
+					<li><a>Our benefits</a></li>
+				</ul>
+				<h2><a>Contact us</a></h2>
+				<ul>
+					<li><a>Cambridge office</a></li>
+					<li><a>Wymondham office</a></li>
+					<li><a>Great yarmouth office</a></li>
+				</ul>
+				<h2><a>Covid risk assessments</a></h2>
+			</div>
+			<!-- cookie popup -->
+			<div id="cookie-popup">
+				<div id="internal-cookie">
+					<h2>Cookies Policy</h2>
+					<hr />
+					<p>
+						Our website uses cookies. This helps us provide you with
+						a good experience on our website. To see what cookies we
+						use and what they do, and to opt-in on non-essential
+						cookies click "change settings". For a detailed
+						explanation, click on
+						<a href="#">"Privacy Policy"</a> otherwise click "Accept
+						Cookies" to enter.
+					</p>
+					<hr />
+					<button id="cookie-settings" class="grey">
+						Change settings
+					</button>
+					<button
+						id="cookie-accept"
+						class="purple"
+						onclick="acceptCookie()"
+					>
+						Accept Cookies
+					</button>
+				</div>
+			</div>
+			<!-- Slider -->
+			<div id="slider">
+				<div class="slider-item">
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/slider1.webp"
+						/>
+						<img
+							alt="netmatters building"
+							src="img/slider1.jpg"
+							width="1910"
+							height="740"
+						/>
+					</picture>
+					<h2 class="header-slider">
+						The East of England's Leading Technology Company
+					</h2>
+					<p class="slider-p">
+						Performance-driven digital and technology services with
+						complete transparency
+					</p>
+					<button class="slider-btn purple">
+						Why choose us?&nbsp;&nbsp;
+					</button>
+				</div>
+
+				<!-- Slider items -->
+				<div class="slider-item">
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/slider2.webp"
+						/>
+						<img
+							alt="happy worker"
+							src="img/slider2.jpg"
+							width="1910"
+							height="740"
+						/>
+					</picture>
+					<h2 class="header-slider">Bespoke Software</h2>
+					<p class="slider-p">
+						Delivering expert bespoke software solutions across a
+						range of industries.
+					</p>
+					<button class="slider-btn grey">
+						Find out more&nbsp;&nbsp;
+					</button>
+				</div>
+
+				<div class="slider-item">
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/slider3.webp"
+						/>
+						<img
+							alt="fixing a computer"
+							src="img/slider3.jpg"
+							width="1910"
+							height="740"
+						/>
+					</picture>
+					<h2 class="header-slider">IT Support</h2>
+					<p class="slider-p">
+						Fast and cost-effective IT support services for your
+						business.
+					</p>
+					<button class="slider-btn blue">
+						Find out more&nbsp;&nbsp;
+					</button>
+				</div>
+
+				<div class="slider-item">
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/slider4.webp"
+						/>
+						<img
+							alt="happy team"
+							src="img/slider4.jpg"
+							width="1910"
+							height="740"
+						/>
+					</picture>
+					<h2 class="header-slider">Digital Marketing</h2>
+					<p class="slider-p">
+						Generating your new business through results-driven
+						marketing activities
+					</p>
+					<button class="slider-btn green">
+						Find out more&nbsp;&nbsp;
+					</button>
+				</div>
+
+				<div class="slider-item">
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/slider5.webp"
+						/>
+						<img
+							alt="phone system"
+							src="img/slider5.jpg"
+							width="1910"
+							height="740"
+						/>
+					</picture>
+					<h2 class="header-slider">Telecoms Services</h2>
+					<p class="slider-p">
+						A new approach to connectivity, see how we can help your
+						business.
+					</p>
+					<button class="slider-btn red">
+						Find out more&nbsp;&nbsp;
+					</button>
+				</div>
+
+				<div class="slider-item">
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/slider6.webp"
+						/>
+						<img
+							alt="happy expert"
+							src="img/slider6.jpg"
+							width="1910"
+							height="740"
+						/>
+					</picture>
+					<h2 class="header-slider">Web Design</h2>
+					<p class="slider-p">
+						For businesses looking to make a strong and effective
+						first impression.
+					</p>
+					<button class="slider-btn purple">
+						Find out more&nbsp;&nbsp;
+					</button>
+				</div>
+
+				<div class="slider-item">
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/slider7.webp"
+						/>
+						<img
+							alt="secure network"
+							src="img/slider7.jpg"
+							width="1910"
+							height="740"
+						/>
+					</picture>
+					<h2 class="header-slider">Cyber Security</h2>
+					<p class="slider-p">
+						Keeping businesses and their customers sensitive
+						information protected.
+					</p>
+					<button class="slider-btn pink">
+						Find out more&nbsp;&nbsp;
+					</button>
+				</div>
+				<div>
+					<span class="dot" onclick="changeSlide(1);"></span>
+					<span class="dot" onclick="changeSlide(2);"></span>
+					<span class="dot" onclick="changeSlide(3);"></span>
+					<span class="dot" onclick="changeSlide(4);"></span>
+					<span class="dot" onclick="changeSlide(5);"></span>
+					<span class="dot" onclick="changeSlide(6);"></span>
+					<span class="dot" onclick="changeSlide(7);"></span>
+				</div>
+			</div>
+
+			<!-- Services grid -->
+			<div id="grid">
+				<div class="container">
+					<h1>Our Services</h1>
+
+					<div class="grid-item" id="grid-1">
+						<span class="icon-grid-1"></span>
+						<h2>Bespoke Software</h2>
+						<p>
+							Bespoke software solutions for all your business
+							needs including integrations and reporting.
+						</p>
+						<button>Read more</button>
+					</div>
+
+					<div class="grid-item" id="grid-2">
+						<span class="icon-grid-2"></span>
+						<h2>IT Support</h2>
+						<p>
+							Fully managed IT support and consultancy packages
+							tailored to meet your exact business needs.
+						</p>
+						<button>Read more</button>
+					</div>
+
+					<div class="grid-item" id="grid-3">
+						<span class="icon-grid-3"></span>
+						<h2>Digital Marketing</h2>
+						<p>
+							Driven brand awareness &amp; ROI through creative
+							digital marketing campaigns.
+						</p>
+						<button>Read more</button>
+					</div>
+
+					<div class="grid-item" id="grid-4">
+						<span class="icon-grid-4"></span>
+						<h2>Telecoms Services</h2>
+						<p>
+							Business telephony solutions including mobile &amp;
+							connectivity solutions.
+						</p>
+						<button>Read more</button>
+					</div>
+
+					<div class="grid-item" id="grid-5">
+						<span class="icon-grid-5"></span>
+						<h2>Web Design</h2>
+						<p>
+							User-centric design for businesses looking to make a
+							lasting impression.
+						</p>
+						<button>Read more</button>
+					</div>
+
+					<div class="grid-item" id="grid-6">
+						<span class="icon-grid-6"></span>
+						<h2>Cyber Security</h2>
+						<p>
+							Prevention, testing, consultancy &amp; breach
+							management services.
+						</p>
+						<button>Read more</button>
+					</div>
+
+					<div class="grid-item" id="grid-7">
+						<span class="icon-grid-7"></span>
+						<h2>Developer Training</h2>
+						<p>
+							Web design &amp; software training courses designed
+							to secure a job in tech.
+						</p>
+						<button>Read more</button>
+					</div>
+
+					<!-- View link. Sent to top with media queries -->
+					<div class="view">
+						<a href="#">View Our Work&nbsp;</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 1st client carousel -->
+			<div class="carousel1">
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/google-partner.webp"
+					/>
+					<img
+						alt="Google partner"
+						src="img/google-partner.jpg"
+						width="169"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/living_wage.webp"
+					/>
+					<img
+						alt="Living wage employer"
+						src="img/living_wage.jpg"
+						width="88"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/norfolk_prohelp.webp"
+					/>
+					<img
+						alt="Norfolk ProHelp"
+						src="img/norfolk_prohelp.png"
+						width="171"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/investing-in-future-growth.webp"
+					/>
+					<img
+						alt="Investing in future growth winner"
+						src="img/investing-in-future-growth.jpg"
+						width="175"
+						height="58"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/norfolk-carbon-charter.webp"
+					/>
+					<img
+						alt="Norfolk carbon charter gold"
+						src="img/norfolk-carbon-charter.jpg"
+						width="173"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source type="image/webp" srcset="img/webp/PPC_logo.webp" />
+					<img
+						alt="Prompt payment code"
+						src="img/PPC_logo.jpg"
+						width="174"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/princess-royal-training.webp"
+					/>
+					<img
+						alt="Princess royal training award"
+						src="img/princess-royal-training.png"
+						width="274"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/future-50.webp"
+					/>
+					<img
+						alt="future 50 member"
+						src="img/future-50.jpg"
+						width="44"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source type="image/webp" srcset="img/webp/qms.webp" />
+					<img
+						alt="quality management"
+						src="img/qms.png"
+						width="142"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/iso_27001.webp"
+					/>
+					<img
+						alt="information security management"
+						src="img/iso_27001.png"
+						width="142"
+						height="70"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/skills-of-tomorrow.webp"
+					/>
+					<img
+						alt="skills of tomorrow winner"
+						src="img/skills-of-tomorrow.jpg"
+						width="175"
+						height="58"
+					/>
+				</picture>
+				<picture class="carousel-item1">
+					<source
+						type="image/webp"
+						srcset="img/webp/cyber-essentials.webp"
+					/>
+					<img
+						alt="cyber essentials"
+						src="img/cyber-essentials.jpg"
+						width="149"
+						height="70"
+					/>
+				</picture>
+			</div>
+
+			<!-- Bio and review box -->
+			<div id="bio">
+				<div class="container">
+					<div id="bio-one">
+						<h2>Welcome To Netmatters</h2>
+						<p>
+							Netmatters is a leading
+							<a href="#"> Bespoke Software</a>,
+							<a href="#"> IT Support</a>, and
+							<a href="#"> Digital Marketing</a> company based in
+							the East of England with offices in
+							<a href="#"> Cambridge</a>,
+							<a href="#"> Wymondham</a>, and
+							<a href="#"> Great Yarmouth</a>.
+						</p>
+						<p>
+							We aren't tied into contracts with third-party
+							providers, so you know that our recommendations for
+							your business are based purely with one benefit in
+							mind: to help improve your business with the most
+							appropriate solutions.
+						</p>
+						<p>
+							We pride ourselves on being an ethical business and
+							have a unique business offering and cost model that
+							ensures you get the most from our relationship in an
+							upfront manner.
+						</p>
+						<button><span>Why choose us?&nbsp;&nbsp;</span></button>
+						<button><span>Our culture&nbsp;&nbsp;</span></button>
+					</div>
+
+					<div id="bio-two">
+						<h2>What Our Clients Think</h2>
+						<p>
+							Netmatters stood out from the start. Great guys and
+							very easy to work with. Both the build and digital
+							marketing teams are clearly skilled -they know their
+							stuff! They delivered a website to our (high!)
+							expectations and went over and above to ensure we
+							were satisfied clients - and we are!
+						</p>
+						<p>
+							Eleanor Bishop, Head of Marketing -
+							<a href="#">Ashcroft Partnership LLP</a>
+						</p>
+						<div>
+							<button class="blue">
+								<span>Google reviews&nbsp;&nbsp;</span>
+							</button>
+							<button class="green">
+								<span>Trustpilot reviews&nbsp;&nbsp;</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- News -->
+			<div id="news">
+				<div class="container">
+					<h2>Latest News</h2>
+
+					<div class="news-item" id="news-1">
+						<a href="#">Case Studies</a>
+						<picture>
+							<source
+								type="image/webp"
+								srcset="img/webp/news1.webp"
+							/>
+							<img
+								alt="abels moving services case study"
+								src="img/news1.png"
+								width="455"
+								height="263"
+							/>
+						</picture>
+						<h2 class="newsheader">
+							Moving Forward: Proactive Digital Marketing w...
+						</h2>
+						<h3>- 7 minute read</h3>
+						<p>
+							Who are Abels Moving Services? Abel's Moving
+							Srevices is a high-end removal company with a rich
+							hist...
+						</p>
+						<button>Read more</button>
+						<div class="headshot-div">
+							<hr />
+							<picture>
+								<source
+									type="image/webp"
+									srcset="img/webp/headshot_netmatters.webp"
+								/>
+								<img
+									alt="netmatters icon"
+									src="img/headshot_netmatters.png"
+									width="47"
+									height="47"
+									class="headshot-img"
+								/>
+							</picture>
+							<h2 class="headshot">Posted by Netmatters</h2>
+							<p class="headshot">22nd May 2024</p>
+						</div>
+					</div>
+
+					<div class="news-item" id="news-2">
+						<a href="#">Careers</a>
+						<picture>
+							<source
+								type="image/webp"
+								srcset="img/webp/news2.webp"
+							/>
+							<img
+								alt="junior telecoms technician"
+								src="img/news2.png"
+								width="455"
+								height="263"
+							/>
+						</picture>
+						<h2 class="newsheader">Junior Telecoms Technician</h2>
+						<p>
+							Salary Range &pound;25000k - &pound;28000 per annum
+							Hours 40 hours per week, Monday - Friday Location
+							Wymondham...
+						</p>
+						<button>Read more</button>
+						<div class="headshot-div">
+							<hr />
+							<picture>
+								<source
+									type="image/webp"
+									srcset="img/webp/headshot_bethany.webp"
+								/>
+								<img
+									alt="bethany shakespeare"
+									src="img/headshot_bethany.jpg"
+									width="47"
+									height="47"
+									class="headshot-img"
+								/>
+							</picture>
+							<h2 class="headshot">
+								Posted by Bethany Shakespeare
+							</h2>
+							<p class="headshot">16th May 2024</p>
+						</div>
+					</div>
+
+					<div class="news-item" id="news-3">
+						<a href="#">Careers</a>
+						<picture>
+							<source
+								type="image/webp"
+								srcset="img/webp/news3.webp"
+							/>
+							<img
+								alt="2nd line technician"
+								src="img/news3.png"
+								width="455"
+								height="263"
+							/>
+						</picture>
+						<h2 class="newsheader">2nd Line Technician</h2>
+						<h3>- 4 minute read</h3>
+						<p>
+							Salary Range &pound;28k-&pound;36k + Bonuses +
+							Pension Hours 40 hours per week, Monday - Friday
+							Location Wymondh...
+						</p>
+						<button>Read more</button>
+						<div class="headshot-div">
+							<hr />
+							<picture>
+								<source
+									type="image/webp"
+									srcset="img/webp/headshot_rebecca.webp"
+								/>
+								<img
+									alt="netmatters icon"
+									src="img/headshot_rebecca.jpg"
+									width="47"
+									height="47"
+									class="headshot-img"
+								/>
+							</picture>
+							<h2 class="headshot">Posted by Rebecca Moore</h2>
+							<p class="headshot">9th May 2024</p>
+						</div>
+					</div>
+
+					<!-- View link. Sent to top with media queries -->
+					<div class="view">
+						<a href="#">View All&nbsp;</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 2nd client carousel -->
+			<div class="carousel">
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Black Swan Care Group</h3>
+							<p>
+								Black Swan Care Group own and manage 21
+								high-quality care and residential homes with a
+								focus on putting the needs of their residents
+								first.
+							</p>
+							<button>View Our Case Study</button>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_blackswan.webp"
+						/>
+						<img
+							alt="Blackswan care group"
+							src="img/logo_blackswan.png"
+							width="122"
+							height="107"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Xupes</h3>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_xupes.webp"
+						/>
+						<img
+							alt="XUPES logo"
+							src="img/logo_xupes.png"
+							width="200"
+							height="38"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>BEAT</h3>
+							<p>
+								The UK's eating disorder charity founded in
+								1989.
+							</p>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_beat.webp"
+						/>
+						<img
+							alt="Beat eating disorders"
+							src="img/logo_beat.png"
+							width="72"
+							height="70"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Survey Solutions</h3>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_surveysolutions.webp"
+						/>
+						<img
+							alt="survey solutions"
+							src="img/logo_surveysolutions.png"
+							width="328"
+							height="79"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Girl Guiding Anglia</h3>
+							<p>
+								Girl Guiding Anglia is part of Girlguiding, the
+								UK's leading charity for girls and young women
+								in the UK.
+							</p>
+							<button>View Our Case Study</button>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_girlguidesanglia.webp"
+						/>
+						<img
+							alt="girlguiding anglia"
+							src="img/logo_girlguidesanglia.png"
+							width="200"
+							height="118"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Sweetzy</h3>
+							<p>
+								Sweetzy are an online sweets retailer, based in
+								Wymondham.
+							</p>
+							<button>View Our Case Study</button>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_sweetzy.webp"
+						/>
+						<img
+							alt="Sweetzy"
+							src="img/logo_sweetzy.png"
+							width="200"
+							height="58"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Howes Percival</h3>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_howespercival.webp"
+						/>
+						<img
+							alt="Howes Percival"
+							src="img/logo_howespercival.png"
+							width="200"
+							height="61"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>GDST</h3>
+							<p>
+								The Girls' Day School Trust (GDST) is the UK's
+								leading family of 25 independent girls' schools.
+							</p>
+							<button>View Our Case Study</button>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_girlsdayschooltrust.webp"
+						/>
+						<img
+							alt="girls day school trust"
+							src="img/logo_girlsdayschooltrust.png"
+							width="200"
+							height="61"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Ashcroft Partnership LLP</h3>
+							<p>
+								Originally founded in 2006 as Ashcroft Anthony,
+								they became Ashcroft Partnership LLP in 2020 and
+								are one of the top chartered accountancy firms
+								in Cambridge, advising entrepreneurs and
+								families.
+							</p>
+							<button>View Our Case Study</button>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_ashcroft.webp"
+						/>
+						<img
+							alt="Ashcroft"
+							src="img/logo_ashcroft.png"
+							width="200"
+							height="42"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>One Traveller</h3>
+							<p>
+								One Traveller, founded in 2007, is a leading
+								provider of solo holidays for over 50s.
+							</p>
+							<button>View Our Case Study</button>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_onetraveller.webp"
+						/>
+						<img
+							alt="One Traveller"
+							src="img/logo_onetraveller.png"
+							width="43"
+							height="75"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Searles Leisure Resort</h3>
+							<p>
+								Searles Leisure Resort, on the beautiful North
+								Norfolk coast, is an award-winning UK holiday
+								resort for families.
+							</p>
+							<button>View Our Case Study</button>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_searles.webp"
+						/>
+						<img
+							alt="Searles"
+							src="img/logo_searles.png"
+							width="200"
+							height="78"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Busseys</h3>
+							<p>One of the UK's leading Ford dealerships.</p>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_busseys.webp"
+						/>
+						<img
+							alt="Busseys"
+							src="img/logo_busseys.png"
+							width="188"
+							height="70"
+						/>
+					</picture>
+				</div>
+				<div class="carousel-item">
+					<div class="carousel-box-cont">
+						<div class="carousel-box">
+							<h3>Crane Garden Buildings</h3>
+							<p>
+								Leading manufacturer and supplier of high-end
+								garden rooms, summerhouses, workshops and sheds
+								in the UK.
+							</p>
+						</div>
+					</div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_crane.webp"
+						/>
+						<img
+							alt="Crane garden buildings"
+							src="img/logo_crane.png"
+							width="287"
+							height="70"
+						/>
+					</picture>
+				</div>
+			</div>
+
+			<!-- Removed from site / Newsletter sign-up form -->
+			<div hidden id="form">
+				<div class="container">
+					<h2>Email Newsletter Sign-Up</h2>
+					<form>
+						<label class="name">Your Name</label><br />
+						<input class="name" type="text" /><br />
+
+						<label class="email">Your Email</label><br />
+						<input class="email" type="email" /><br />
+
+						<aside>
+							<!-- hidden in html for now -->
+							<input hidden type="checkbox" />
+							<label
+								>Please tick this box if you wish to receive
+								marketing information from us. Please see our
+								<a href="#">Privacy Policy</a> for more
+								information on how we keep your data
+								safe.</label
+							><br />
+						</aside>
+
+						<!-- Submit button -->
+						<button id="subscribe" type="submit" class="subscribe">
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="container" id="footer-cont-1">
+				<!-- Div used to move elements on grid as needed -->
+				<div>
+					<picture>
+						<source
+							type="image/webp"
+							srcset="img/webp/logo_main-white-med.webp"
+						/>
+						<img
+							alt="netmatters logo"
+							src="img/logo_main-white-med.png"
+							width="400"
+							height="82"
+							id="logo"
+						/>
+					</picture>
+
+					<h2>Follow us on:</h2>
+
+					<!-- Social buttons -->
+					<div id="socials">
+						<!-- Facebook -->
+						<button class="social" id="fb">
+							<span class="icon-fb"></span>
+						</button>
+
+						<!-- LinkedIn -->
+						<button class="social" id="linkedin">
+							<span class="icon-lin"></span>
+						</button>
+
+						<!-- Twitter -->
+						<button class="social" id="twitter">
+							<span class="icon-twitter"></span>
+						</button>
+
+						<!-- Instagram -->
+						<button class="social" id="insta">
+							<span class="icon-insta"></span>
+						</button>
+					</div>
+				</div>
+
+				<!-- Nested divs used to move elements on grid as needed -->
+				<div id="footer-grid">
+					<div>
+						<h2>About Netmatters</h2>
+
+						<ul>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Our Careers</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Cookie Policy</a></li>
+							<li>
+								<a href="#">Data Retention & Disposal Policy</a>
+							</li>
+							<li><a href="#">CCTV Policy</a></li>
+							<li><a href="#">Environmental Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h2>Our services</h2>
+
+						<ul>
+							<li><a href="#">Bespoke Software</a></li>
+							<li><a href="#">IT Support</a></li>
+							<li><a href="#">Digital Marketing</a></li>
+							<li><a href="#">Telecoms Services</a></li>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Cyber Security</a></li>
+							<li><a href="#">Developer Training</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h2>Our industries</h2>
+
+						<ul>
+							<li><a href="#">Financial Services</a></li>
+							<li><a href="#">Construction</a></li>
+							<li><a href="#">Retail & E-Commerce</a></li>
+							<li><a href="#">Non-Profits</a></li>
+							<li><a href="#">SME's</a></li>
+							<li><a href="#">Healthcare</a></li>
+							<li><a href="#">Education & Training</a></li>
+							<li><a href="#">Travel & Leisure</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h2>Locations</h2>
+
+						<ul>
+							<li><a href="#">Cambridge Office</a></li>
+							<li><a href="#">Wymondham Office</a></li>
+							<li><a href="#">Great Yarmouth Office</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Copyright disclaimer -->
+			<div id="copyright">
+				<div class="container">
+					<p>&copy; Copyright Netmatters 2024.</p>
+					<p>All rights reserved.</p>
+					<p hidden>-</p>
+					<p>Sitemap</p>
+				</div>
+			</div>
+
+			<!-- Cookies button -->
+			<aside onclick="popupCookie();">
+				<p>Manage Consent</p>
+			</aside>
+
+			<button id="chat"><span class="icon-chat"></span></button>
+		</footer>
+		<!-- importing javascript -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/cookies.js"></script>
+		<script src="./js/header.js"></script>
+		<script src="./js/navbar.js"></script>
+		<script src="./js/splash.js"></script>
+		<script src="./js/clients.js"></script>
+	</body>
+</html>
