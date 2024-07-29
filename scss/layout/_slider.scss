@@ -1,0 +1,124 @@
+// Slider styles
+
+#slider {
+	padding-top: 0;
+	position: relative;
+	margin: auto;
+	background-color: $text-dark;
+	height: 550px;
+	width: 100%;
+}
+
+.slider-item {
+	display: none;
+	height: 100%;
+	flex-direction: column;
+	h2,
+	p,
+	img {
+		pointer-events: none;
+	}
+	h2 {
+		padding-top: 60px;
+		text-align: center;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		font-weight: 600;
+		margin-bottom: 1.25rem;
+	}
+	@include media-2 {
+		h2 {
+			font-size: 4rem;
+			line-height: 5rem;
+		}
+		p {
+			font-size: 1.625rem;
+			line-height: 2.5rem;
+		}
+		h2,
+		p,
+		button {
+			text-align: left;
+			padding-left: 15px;
+			margin-left: 15px;
+		}
+	}
+	text-align: center;
+	min-height: 500px;
+	margin-top: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	button {
+		margin: auto;
+	}
+	p {
+		margin-bottom: 0.375rem;
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+		font-weight: 600;
+	}
+	img {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0.6;
+	}
+	h2,
+	p,
+	button {
+		z-index: 2;
+		position: relative;
+	}
+}
+
+.slider-item {
+	@include media-2 {
+		.slider-p {
+			padding-left: 15px;
+		}
+		.slider-btn {
+			margin-left: 30px;
+		}
+	}
+}
+
+.slider-item {
+	@include media-3 {
+		.slider-p,
+		.header-slider {
+			padding-left: calc((100vw - 1260px) / 2 + 15px);
+			max-width: 1260px;
+		}
+		.slider-btn {
+			margin-left: calc((100vw - 1260px) / 2 + 30px);
+		}
+	}
+}
+
+.dot {
+	cursor: pointer;
+	height: 11px;
+	width: 11px;
+	margin: 0 10px;
+	background-color: #bbb;
+	border-radius: 30px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	left: calc(50vw - 147px);
+	bottom: 65px;
+}
+
+.dot:hover {
+	background-color: #717171;
+}
+
+.active {
+	background-color: $text-white;
+	outline: 1px solid #bbb;
+	outline-offset: 3px;
+}

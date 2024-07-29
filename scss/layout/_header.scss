@@ -1,0 +1,407 @@
+// Header styles
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 98;
+	margin-top: 0;
+	width: 100vw;
+}
+header {
+	transition: all 0.5s;
+	background-color: $background-white;
+	margin-top: 15px;
+	min-height: 110px;
+	color: $text-white;
+	#header-cont-1 {
+		padding-bottom: 20px;
+		display: grid;
+		grid-template-columns: 8fr 1fr 1fr;
+		justify-content: space-between;
+		align-items: center;
+		a {
+			margin-top: 15px;
+		}
+	}
+	button:nth-of-type(3) {
+		display: none;
+		@include media-1 {
+			display: flex;
+		}
+		margin-left: 0;
+		border-radius: 0 3px 3px 0;
+	}
+	.hidden_button {
+		display: none;
+	}
+	img {
+		margin-left: 15px;
+		margin-top: 15px;
+		margin-right: 15px;
+		max-width: 90%;
+	}
+	span {
+		display: block;
+		color: $text-dark;
+		width: 50px;
+		align-self: center;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration-line: underline;
+		}
+	}
+	input {
+		display: none;
+	}
+	form {
+		display: flex;
+		grid-column-start: span 3;
+		width: 100%;
+		input {
+			display: block;
+			border: 2px solid $mid-grey;
+			background: $off-white;
+			grid-column: span 3;
+			margin-left: 15px;
+			margin-right: 15px;
+			height: 40px;
+			z-index: 0;
+			width: 100%;
+			padding: 5px 40px 5px 15px;
+		}
+		span {
+			position: absolute;
+			right: 5px;
+		}
+	}
+	aside {
+		display: none;
+		grid-template-columns: 1fr;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		background-color: $background-dark;
+		#header-cont-2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			padding: 0;
+			.banner_item {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				margin: 0;
+				padding-bottom: 5px;
+				h2 {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	@include media-1 {
+		#phone {
+			display: none;
+		}
+		input {
+			display: inline;
+			border: 1px solid $mid-grey;
+			margin-left: 50px;
+			z-index: 0;
+			margin-right: 0;
+			height: 56px;
+			padding-left: 5px;
+		}
+		form {
+			input {
+				display: none;
+			}
+		}
+		#header-cont-1 {
+			grid-template-columns: 6fr 2fr 1fr 1fr;
+		}
+	}
+	@include media-2 {
+		.hidden_button {
+			display: flex;
+		}
+		input {
+			display: none;
+		}
+		button,
+		#search {
+			margin-left: 10px;
+			margin-right: 10px;
+			border-radius: 5px;
+			svg {
+				width: 35px;
+			}
+		}
+		flex-wrap: nowrap;
+		aside {
+			grid-column-start: span 5;
+		}
+		#header-cont-1 {
+			grid-template-columns: 4fr 2fr 2fr 1fr 1fr;
+		}
+		aside {
+			display: grid;
+		}
+		min-height: 202px;
+	}
+	@include media-3 {
+		#search {
+			margin-left: 0px;
+			margin-right: 10px;
+			border-radius: 0 3px 3px 0;
+		}
+		input {
+			display: block;
+			margin-left: 10px;
+		}
+		#header-cont-1 {
+			grid-template-columns: 6fr 2fr 2fr 3fr 1fr 1fr;
+		}
+		aside {
+			grid-column-start: span 6;
+		}
+	}
+}
+
+// Banner
+
+header {
+	aside {
+		margin: 0;
+		background-color: $background-dark;
+		height: 92.5px;
+		width: 100vw;
+		#header-cont-2 {
+			max-width: 1260px;
+			height: 100%;
+		}
+	}
+}
+
+.banner_item {
+	padding-top: 15px;
+	padding-bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	h3 {
+		font-weight: normal;
+		margin: 0;
+		font-size: 10px;
+		margin-bottom: -5px;
+	}
+}
+
+.banner_hidden {
+	display: none;
+	grid-row-start: 2;
+	grid-column-start: span 7;
+	row-gap: 15px;
+	width: Min(calc(100% - 30px), 1260px);
+	color: $text-white;
+	z-index: 1;
+	padding-left: Max(15px, calc((100% - 1260px) / 2));
+	padding-right: Max(15px, calc((100% - 1260px) / 2));
+	padding-top: 50px;
+	padding-bottom: 50px;
+	span {
+		color: $text-white;
+	}
+	a {
+		color: $text-white;
+		font-size: 1rem;
+		padding-left: 5px;
+	}
+	&:hover {
+		display: grid;
+	}
+	grid-template-columns: 1fr 10fr 1fr 10fr 1fr 10fr;
+	h2 {
+		grid-column-start: span 6;
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
+}
+
+#banner-1 {
+	span {
+		color: $grid-grey;
+	}
+	button {
+		background-color: $grid-grey;
+	}
+	&:hover {
+		background-color: $grid-grey;
+		span {
+			color: $text-white;
+		}
+	}
+}
+
+#banner-2 {
+	span {
+		color: $grid-blue;
+	}
+	button {
+		background-color: $grid-blue;
+	}
+	&:hover {
+		background-color: $grid-blue;
+		span {
+			color: $text-white;
+		}
+	}
+}
+
+#banner-3 {
+	span {
+		color: $grid-green;
+	}
+	button {
+		background-color: $grid-green;
+	}
+	&:hover {
+		background-color: $grid-green;
+		span {
+			color: $text-white;
+		}
+	}
+}
+
+#banner-4 {
+	span {
+		color: $grid-red;
+	}
+	button {
+		background-color: $grid-red;
+	}
+	&:hover {
+		background-color: $grid-red;
+		span {
+			color: $text-white;
+		}
+	}
+}
+
+#banner-5 {
+	span {
+		color: $grid-purple;
+	}
+	button {
+		background-color: $grid-purple;
+	}
+	&:hover {
+		background-color: $grid-purple;
+		span {
+			color: $text-white;
+		}
+	}
+}
+
+#banner-6 {
+	span {
+		color: $grid-pink;
+	}
+	button {
+		background-color: $grid-pink;
+	}
+	&:hover {
+		background-color: $grid-pink;
+		span {
+			color: $text-white;
+		}
+	}
+}
+
+#banner-7 {
+	span {
+		color: $grid-orange;
+	}
+	button {
+		background-color: $grid-orange;
+	}
+	&:hover {
+		background-color: $grid-orange;
+		span {
+			color: $text-white;
+		}
+	}
+}
+
+#banner-1b {
+	background-color: $banner-grey;
+}
+
+#banner-2b {
+	background-color: $banner-blue;
+}
+
+#banner-3b {
+	background-color: $banner-green;
+}
+
+#banner-4b {
+	background-color: $banner-red;
+}
+
+#banner-5b {
+	background-color: $banner-purple;
+}
+
+#banner-6b {
+	background-color: $banner-pink;
+}
+
+#banner-7b {
+	background-color: $banner-orange;
+}
+
+// Navbar
+
+#navbar {
+	position: fixed;
+	min-height: 100vh;
+	width: 18vw;
+	top: 0;
+	right: 0;
+	text-transform: uppercase;
+	background-color: $background-dark;
+	padding: 0;
+	z-index: 99;
+	display: none;
+	h2 {
+		background-color: $background-dark;
+		border: 1px solid $button-hover;
+		margin: 0;
+		padding: 10px;
+		font-size: 1.3rem;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	li {
+		background-color: $button;
+		border: 1px solid $button-hover;
+		margin: 0;
+		padding: 10px;
+		font-size: 0.9rem;
+	}
+	div {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@include media-2 {
+	#mobile-nav {
+		display: none;
+	}
+}

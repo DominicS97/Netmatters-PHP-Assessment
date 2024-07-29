@@ -1,0 +1,294 @@
+// Grid styles
+
+#grid {
+	width: 100%;
+	background-color: $background-white;
+	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		@include media-1 {
+			grid-template-columns: 1fr 1fr;
+			#grid-1,
+			#grid-2,
+			#grid-3 {
+				grid-column-start: span 2;
+			}
+			.view {
+				grid-row-start: 1;
+				grid-column-start: 2;
+				justify-self: right;
+				a {
+					white-space: nowrap;
+					font-size: 2.25rem;
+				}
+			}
+		}
+		@include media-2 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+			#grid-1,
+			#grid-2,
+			#grid-3 {
+				grid-column-start: span 2;
+			}
+			#grid-4,
+			#grid-5,
+			#grid-6,
+			#grid-7,
+			.view {
+				grid-column-start: span 3;
+			}
+			h1 {
+				grid-row-start: 1;
+				grid-column-start: 1;
+				grid-column-end: 4;
+			}
+		}
+		@include media-3 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+			#grid-1,
+			#grid-2,
+			#grid-3 {
+				grid-column-start: span 4;
+			}
+			#grid-4,
+			#grid-5,
+			#grid-6,
+			#grid-7,
+			.view {
+				grid-column-start: span 3;
+			}
+			h1 {
+				grid-row-start: 1;
+				grid-column-start: 1;
+				grid-column-end: 10;
+			}
+		}
+	}
+	h1 {
+		font-size: 2.7rem;
+		font-weight: 400;
+		align-self: left;
+		padding-left: 15px;
+		color: $text-dark;
+	}
+	a {
+		color: $text-dark;
+		font-size: 1.625rem;
+		font-weight: 600;
+		align-self: center;
+		text-decoration: none;
+		&:hover {
+			text-decoration-line: underline;
+		}
+	}
+}
+
+.grid-item {
+	background-color: $background-white;
+	margin: 15px;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 3px 35px $text-midtone;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: center;
+	text-align: center;
+	position: relative;
+	top: 0;
+	transition: 0.5s ease;
+	&:hover {
+		top: -10px;
+		transition: 0.5s ease;
+	}
+	span {
+		height: 70px;
+		width: 70px;
+		margin: auto;
+		margin-bottom: 15px;
+		border-radius: 50%;
+		font-size: 40px;
+	}
+	p {
+		color: $text-dark;
+	}
+	h2 {
+		color: $text-dark;
+		font-size: 1.3rem;
+		font-weight: 400;
+	}
+	button {
+		margin: auto;
+		width: 160px;
+	}
+}
+
+#grid-1 {
+	span {
+		background-color: $grid-grey;
+	}
+	button {
+		background-color: $grid-grey;
+	}
+	&:hover {
+		background-color: $grid-grey;
+		h2,
+		p {
+			color: $text-white;
+		}
+		span {
+			color: $grid-grey;
+			background-color: $background-white;
+		}
+		button {
+			color: $grid-grey;
+			background-color: $background-white;
+		}
+	}
+}
+
+#grid-2 {
+	span {
+		background-color: $grid-blue;
+	}
+	button {
+		background-color: $grid-blue;
+	}
+	&:hover {
+		background-color: $grid-blue;
+		h2,
+		p {
+			color: $text-white;
+		}
+		span {
+			color: $grid-blue;
+			background-color: $background-white;
+		}
+		button {
+			color: $grid-blue;
+			background-color: $background-white;
+		}
+	}
+}
+
+#grid-3 {
+	span {
+		background-color: $grid-green;
+	}
+	button {
+		background-color: $grid-green;
+	}
+	&:hover {
+		background-color: $grid-green;
+		h2,
+		p {
+			color: $text-white;
+		}
+		span {
+			color: $grid-green;
+			background-color: $background-white;
+		}
+		button {
+			color: $grid-green;
+			background-color: $background-white;
+		}
+	}
+}
+
+#grid-4 {
+	span {
+		background-color: $grid-red;
+	}
+	button {
+		background-color: $grid-red;
+	}
+	&:hover {
+		background-color: $grid-red;
+		h2,
+		p {
+			color: $text-white;
+		}
+		span {
+			color: $grid-red;
+			background-color: $background-white;
+		}
+		button {
+			color: $grid-red;
+			background-color: $background-white;
+		}
+	}
+}
+
+#grid-5 {
+	span {
+		background-color: $grid-purple;
+	}
+	button {
+		background-color: $grid-purple;
+	}
+	&:hover {
+		background-color: $grid-purple;
+		h2,
+		p {
+			color: $text-white;
+		}
+		span {
+			color: $grid-purple;
+			background-color: $background-white;
+		}
+		button {
+			color: $grid-purple;
+			background-color: $background-white;
+		}
+	}
+}
+
+#grid-6 {
+	span {
+		background-color: $grid-pink;
+	}
+	button {
+		background-color: $grid-pink;
+	}
+	&:hover {
+		background-color: $grid-pink;
+		h2,
+		p {
+			color: $text-white;
+		}
+		span {
+			color: $grid-pink;
+			background-color: $background-white;
+		}
+		button {
+			color: $grid-pink;
+			background-color: $background-white;
+		}
+	}
+}
+
+#grid-7 {
+	span {
+		background-color: $grid-orange;
+	}
+	button {
+		background-color: $grid-orange;
+	}
+	&:hover {
+		background-color: $grid-orange;
+		h2,
+		p {
+			color: $text-white;
+		}
+		span {
+			color: $grid-orange;
+			background-color: $background-white;
+		}
+		button {
+			color: $grid-orange;
+			background-color: $background-white;
+		}
+	}
+}

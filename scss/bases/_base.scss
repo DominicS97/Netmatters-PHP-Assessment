@@ -1,0 +1,54 @@
+// Import icomoons font
+
+@font-face {
+	font-family: "icon";
+	src: url("../fonts/icomoon.eot");
+	src: url("../fonts/icomoon.woff2") format("woff2"),
+		url("../fonts/icomoon.woff") format("woff"),
+		url("../fonts/icomoon.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+// Base styles
+
+body {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	font-family: sans-serif;
+	color: #fff;
+	font-family: "Poppins", sans-serif;
+	font-weight: normal;
+	font-size: 0.8125rem;
+	line-height: 1.3rem;
+	letter-spacing: 0.4px;
+	margin-top: Min(41%, 223px);
+	@include media-1 {
+		margin-top: Min(17%, 223px);
+	}
+	@include media-2 {
+		margin-top: Min(41%, 223px);
+	}
+}
+
+main {
+	width: 100vw;
+}
+
+h2 {
+	font-size: 36px;
+	color: #fff;
+	font-weight: 300;
+	padding: 0px;
+	margin: 0px;
+}
+
+img {
+	width: auto;
+	height: auto;
+}

@@ -1,0 +1,604 @@
+// Creating icon pseudo-elements
+
+// Header
+
+.icon-search:before {
+	font-family: "icon";
+	content: "\e986";
+	color: $text-white;
+}
+
+#phone:after {
+	font-family: "icon";
+	content: "\e91b";
+	color: $text-dark;
+	font-size: 2rem;
+	position: relative;
+	left: 20%;
+	top: 20%;
+}
+
+#phone:hover:after {
+	text-decoration: underline;
+}
+
+.icon-nav:before {
+	font-family: "icon";
+	content: var(--navCont, "\e90d");
+	color: $text-white;
+	font-size: 2rem;
+}
+
+.icon-search2:before {
+	font-family: "icon";
+	content: "\e986";
+	color: $text-dark;
+	font-size: 1.4rem;
+	@include media-1 {
+		display: none;
+	}
+	z-index: 1;
+	left: calc(90% - 19px);
+	top: 12%;
+}
+
+// Navbar
+
+#navbar {
+	li a:before {
+		content: "»    ";
+	}
+}
+
+// Banner
+
+#icon-banner-1:before {
+	font-family: "icon";
+	content: "\e920";
+	font-size: 25px;
+	position: relative;
+	left: 0%;
+}
+
+#icon-banner-2:before {
+	font-family: "icon";
+	content: "\e917";
+	font-size: 25px;
+	position: relative;
+	left: 8%;
+}
+
+#icon-banner-3:before {
+	font-family: "icon";
+	content: "\e910";
+	font-size: 25px;
+	position: relative;
+	left: 8%;
+}
+
+#icon-banner-4:before {
+	font-family: "icon";
+	content: "\e91b";
+	font-size: 25px;
+	position: relative;
+	left: 6%;
+}
+
+#icon-banner-5:before {
+	font-family: "icon";
+	content: "\e90f";
+	font-size: 25px;
+	position: relative;
+	left: 7%;
+}
+
+#icon-banner-6:before {
+	font-family: "icon";
+	content: "\e91d";
+	font-size: 25px;
+	position: relative;
+	left: 8%;
+}
+
+#icon-banner-7:before {
+	font-family: "icon";
+	content: "\e913";
+	font-size: 25px;
+	position: relative;
+	left: 0%;
+}
+
+// Banner triangles
+
+#banner-1:before {
+	content: "";
+	display: var(--display1, none);
+	position: absolute;
+	bottom: -24px;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-grey transparent transparent;
+}
+
+#banner-2:before {
+	content: "";
+	display: var(--display2, none);
+	position: absolute;
+	bottom: -24px;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-blue transparent transparent;
+}
+
+#banner-3:before {
+	content: "";
+	display: var(--display3, none);
+	position: absolute;
+	bottom: -24px;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-green transparent transparent;
+}
+
+#banner-4:before {
+	content: "";
+	display: var(--display4, none);
+	position: absolute;
+	bottom: -24px;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-red transparent transparent;
+}
+
+#banner-5:before {
+	content: "";
+	display: var(--display5, none);
+	position: absolute;
+	bottom: -24px;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-purple transparent transparent;
+}
+
+#banner-6:before {
+	content: "";
+	display: var(--display6, none);
+	position: absolute;
+	bottom: -24px;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-pink transparent transparent;
+}
+
+#banner-7:before {
+	content: "";
+	display: var(--display7, none);
+	position: absolute;
+	bottom: -24px;
+	z-index: 2;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 35px Min(calc(100vw / 14), 90px) 0;
+	border-color: $grid-orange transparent transparent;
+}
+
+// Sub-header
+
+#banner-1b {
+	span:first-of-type:before {
+		font-family: "icon";
+		content: "\e995";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(2):before {
+		font-family: "icon";
+		content: "\e90e";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(3):before {
+		font-family: "icon";
+		content: "\e907";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(4):before {
+		font-family: "icon";
+		content: "\e959";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(5):before {
+		font-family: "icon";
+		content: "\e930";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(6):before {
+		font-family: "icon";
+		content: "\ea45";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(7):before {
+		font-family: "icon";
+		content: "\e9c5";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(8):before {
+		font-family: "icon";
+		content: "\e976";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(9):before {
+		font-family: "icon";
+		content: "\e90b";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(10):before {
+		font-family: "icon";
+		content: "\e909";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(11):before {
+		font-family: "icon";
+		content: "\e90a";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(12):before {
+		font-family: "icon";
+		content: "\e902";
+		font-size: 1.4rem;
+	}
+}
+
+#banner-2b {
+	span:first-of-type:before {
+		font-family: "icon";
+		content: "\e900";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(2):before {
+		font-family: "icon";
+		content: "\e90e";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(3):before {
+		font-family: "icon";
+		content: "\e90b";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(4):before {
+		font-family: "icon";
+		content: "\e913";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(5):before {
+		font-family: "icon";
+		content: "\e909";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(6):before {
+		font-family: "icon";
+		content: "\e963";
+		font-size: 1.4rem;
+	}
+}
+
+#banner-3b {
+	span:first-of-type:before {
+		font-family: "icon";
+		content: "\e986";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(2):before {
+		font-family: "icon";
+		content: "\e93d";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(3):before {
+		font-family: "icon";
+		content: "\e91f";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(4):before {
+		font-family: "icon";
+		content: "\e90c";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(5):before {
+		font-family: "icon";
+		content: "\e976";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(6):before {
+		font-family: "icon";
+		content: "\e905";
+		font-size: 1.4rem;
+	}
+}
+
+#banner-4b {
+	span:first-of-type:before {
+		font-family: "icon";
+		content: "\e959";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(2):before {
+		font-family: "icon";
+		content: "\e942";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(3):before {
+		font-family: "icon";
+		content: "\e976";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(4):before {
+		font-family: "icon";
+		content: "\e901";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(5):before {
+		font-family: "icon";
+		content: "\e914";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(6):before {
+		font-family: "icon";
+		content: "\e91b";
+		font-size: 1.4rem;
+	}
+}
+
+#banner-5b {
+	span:first-of-type:before {
+		font-family: "icon";
+		content: "\e905";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(2):before {
+		font-family: "icon";
+		content: "\e906";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(3):before {
+		font-family: "icon";
+		content: "\e917";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(4):before {
+		font-family: "icon";
+		content: "\e91a";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(5):before {
+		font-family: "icon";
+		content: "\e959";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(6):before {
+		font-family: "icon";
+		content: "\e909";
+		font-size: 1.4rem;
+	}
+}
+
+#banner-6b {
+	span:first-of-type:before {
+		font-family: "icon";
+		content: "\e92d";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(2):before {
+		font-family: "icon";
+		content: "\e94e";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(3):before {
+		font-family: "icon";
+		content: "\e904";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(4):before {
+		font-family: "icon";
+		content: "\e913";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(5):before {
+		font-family: "icon";
+		content: "\e91d";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(6):before {
+		font-family: "icon";
+		content: "\e98f";
+		font-size: 1.4rem;
+	}
+}
+
+#banner-7b {
+	span:first-of-type:before {
+		font-family: "icon";
+		content: "\e90b";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(2):before {
+		font-family: "icon";
+		content: "\e90f";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(3):before {
+		font-family: "icon";
+		content: "\e903";
+		font-size: 1.4rem;
+	}
+	span:nth-of-type(4):before {
+		font-family: "icon";
+		content: "\e914";
+		font-size: 1.4rem;
+	}
+}
+
+// Grid
+
+.icon-grid-1:before {
+	font-family: "icon";
+	content: "\e920";
+	position: relative;
+	top: 35%;
+}
+
+.icon-grid-2:before {
+	font-family: "icon";
+	content: "\e917";
+	position: relative;
+	top: 35%;
+	left: 10%;
+}
+
+.icon-grid-3:before {
+	font-family: "icon";
+	content: "\e910";
+	position: relative;
+	top: 35%;
+	left: 8%;
+}
+
+.icon-grid-4:before {
+	font-family: "icon";
+	content: "\e91b";
+	position: relative;
+	top: 35%;
+	left: 8%;
+}
+
+.icon-grid-5:before {
+	font-family: "icon";
+	content: "\e90f";
+	position: relative;
+	top: 35%;
+	left: 8%;
+}
+
+.icon-grid-6:before {
+	font-family: "icon";
+	content: "\e91d";
+	position: relative;
+	top: 35%;
+	left: 10%;
+}
+
+.icon-grid-7:before {
+	font-family: "icon";
+	content: "\e913";
+	position: relative;
+	top: 35%;
+	left: 4%;
+}
+
+// Bio
+
+#bio {
+	span {
+		&:after {
+			font-family: "icon";
+			content: "\e91c";
+			color: $text-white;
+		}
+	}
+}
+
+// Slider
+
+.slider-item {
+	button:after {
+		font-family: "icon";
+		content: "\e91c";
+		color: $text-white;
+	}
+}
+
+// News
+
+.view {
+	a {
+		&:after {
+			font-family: "icon";
+			content: "\e91c";
+			color: $text-dark;
+		}
+	}
+}
+
+// Form
+
+#form {
+	aside {
+		label:before {
+			display: block;
+			font-family: "icon";
+			content: "\ea53";
+			color: $text-dark;
+		}
+	}
+}
+
+// Footer
+
+.icon-fb:before {
+	font-family: "icon";
+	content: "\e912";
+	color: $text-white;
+}
+
+.icon-lin:before {
+	font-family: "icon";
+	content: "\e916";
+	color: $text-white;
+}
+
+.icon-twitter:before {
+	font-family: "icon";
+	content: "\e921";
+	color: $text-white;
+}
+
+.icon-insta:before {
+	font-family: "icon";
+	content: "\e915";
+	color: $text-white;
+}
+
+.icon-chat:before {
+	font-family: "icon";
+	content: "\e908";
+	color: $text-white;
+}
+
+// Carousel trianges
+
+.carousel-box-cont:after {
+	content: "";
+	margin: auto;
+	display: inline-block;
+	border-color: $text-dark transparent transparent;
+	border-style: solid;
+	border-width: 36px 36px 0;
+	position: relative;
+	left: calc(50% - 18px);
+}

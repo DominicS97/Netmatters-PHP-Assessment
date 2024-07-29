@@ -1,0 +1,113 @@
+// Site colours
+
+// Base colours
+
+$black: #000;
+$white: #fff;
+$off-white: #ddd;
+$grey: #999aa2;
+$mid-grey: #a3a8ac;
+$dark-grey: #75788a;
+$netmatters: #323544;
+$netmatters-alt1: #121318;
+$netmatters-alt2: #272936;
+$netmatters-alt3: #212330;
+$netmatters-alt4: #333645;
+
+// Spot colours
+
+$dark-purple: #79539a;
+$purple: #926fb1;
+
+$dark-blue: #286abd;
+$mid-blue: #4183d7;
+$blue: #4387f6;
+
+$dark-bluegrey: #526781;
+$bluegrey: #67809f;
+
+$dark-green: #25a25a;
+$mid-green: #00b67b;
+$green: #2ecc71;
+
+$dark-pink: #de093f;
+$pink: #f62459;
+
+$dark-yellow: #db8c0d;
+$yellow: #ffa500;
+
+$dark-red: #bc2c28;
+$red: #d64541;
+
+$dark-orange: #a3331d;
+$orange: #ce4125;
+
+$fb-blue: #3b5998;
+$linkedin-blue: #0077b5;
+$twitter-blue: #00aced;
+$insta-pink: #d93175;
+
+// Colour functions
+
+// Buttons
+
+$button: $netmatters-alt2;
+$button-hover: $netmatters-alt1;
+$button-light: $grey;
+$button-social: $netmatters-alt3;
+$button-cookie: $dark-grey;
+
+$button-blue: $blue;
+$button-green: $mid-green;
+$button-purple: $purple;
+$button-grey: $mid-grey;
+
+$hover-grey: $dark-grey;
+
+$hover-cookie: $grey;
+
+$hover-fb: $fb-blue;
+$hover-lin: $linkedin-blue;
+$hover-twitter: $twitter-blue;
+$hover-insta: $insta-pink;
+
+// Banner
+
+$banner-grey: $dark-bluegrey;
+$banner-blue: $dark-blue;
+$banner-green: $dark-green;
+$banner-red: $dark-red;
+$banner-purple: $dark-purple;
+$banner-pink: $dark-pink;
+$banner-orange: $dark-orange;
+
+// Grid
+
+$grid-grey: $bluegrey;
+$grid-blue: $mid-blue;
+$grid-green: $green;
+$grid-red: $red;
+$grid-purple: $purple;
+$grid-pink: $pink;
+$grid-orange: $orange;
+
+// Bio
+
+$star: $yellow;
+
+// News
+
+$news-blue: $mid-blue;
+$news-red: $red;
+$news-yellow: $dark-yellow;
+$news-green: $green;
+
+// General Use
+
+$background-dark: $netmatters;
+$background-light: $off-white;
+$background-white: $white;
+
+$text-dark: $netmatters-alt4;
+$text-midtone: $mid-grey;
+$text-white: $white;

@@ -1,0 +1,130 @@
+// Button styles
+
+// Default
+
+button {
+	height: 56px;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-color: $button;
+	color: $text-white;
+	border: 0;
+	border-radius: 5px;
+	padding: 5px 15px;
+	margin: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	cursor: pointer;
+	&:hover,
+	&:focus {
+		background-color: $button-hover;
+	}
+}
+
+.button-box {
+	width: 63px;
+}
+
+// Reusable buttons
+
+.subscribe {
+	background-color: $background-dark;
+	&:hover,
+	&:focus {
+		background-color: $button-social;
+	}
+}
+
+.green {
+	background-color: $button-green;
+	&:hover,
+	&:focus {
+		background-color: $banner-green;
+	}
+}
+
+.purple {
+	background-color: $button-purple;
+	&:hover,
+	&:focus {
+		background-color: $banner-purple;
+	}
+}
+
+.blue {
+	background-color: $button-blue;
+	&:hover,
+	&:focus {
+		background-color: $banner-blue;
+	}
+}
+
+.grey {
+	background-color: $button-grey;
+	&:hover,
+	&:focus {
+		background-color: $hover-grey;
+	}
+}
+
+.pink {
+	background-color: $grid-pink;
+	&:hover,
+	&:focus {
+		background-color: $banner-pink;
+	}
+}
+
+.red {
+	background-color: $grid-red;
+	&:hover,
+	&:focus {
+		background-color: $banner-red;
+	}
+}
+
+// Footer socials
+
+.social {
+	border-radius: 0;
+	height: 60px;
+	display: inline;
+	width: 70px;
+	height: 56px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	&:first-of-type {
+		margin-left: 15px;
+	}
+}
+
+#fb {
+	&:hover,
+	&:focus {
+		background-color: $hover-fb;
+	}
+}
+
+#linkedin {
+	&:hover,
+	&:focus {
+		background-color: $hover-lin;
+	}
+}
+
+#twitter {
+	&:hover,
+	&:focus {
+		background-color: $hover-twitter;
+	}
+}
+
+#insta {
+	&:hover,
+	&:focus {
+		background-color: $hover-insta;
+	}
+}

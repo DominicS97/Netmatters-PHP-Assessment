@@ -1,0 +1,116 @@
+// Footer styles
+
+footer {
+	background-color: $background-dark;
+	margin: 0;
+	width: 100%;
+	position: relative;
+	z-index: 0;
+	a {
+		text-decoration: none;
+		color: $text-white;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	p {
+		margin: 0;
+	}
+	h2 {
+		font-size: 1rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-left: 15px;
+		margin-bottom: 26px;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	li,
+	p {
+		font-size: 13px;
+		padding-left: 15px;
+	}
+	aside {
+		background-color: $button-cookie;
+		font-style: bold;
+		width: 160px;
+		height: 20px;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		border-top-right-radius: 5px;
+		&:hover {
+			background-color: $hover-cookie;
+		}
+	}
+	#logo {
+		margin-left: 15px;
+		margin-top: 15px;
+		max-width: 70%;
+	}
+	#chat {
+		position: fixed;
+		bottom: 0;
+		right: 30px;
+		height: 60px;
+		width: 60px;
+		z-index: 1;
+		border-radius: 50%;
+		background-color: $background-dark;
+		box-shadow: $button-hover 0 0 5px;
+	}
+}
+
+#copyright {
+	background-color: $button-social;
+	width: 100%;
+	min-height: 6.5%;
+	padding-top: 0;
+	padding-bottom: 0;
+	@include media-1 {
+		p {
+			display: inline;
+		}
+	}
+}
+
+#footer-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	@include media-1 {
+		grid-template-columns: 1fr 1fr;
+	}
+	@include media-2 {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+footer {
+	#footer-cont-1 {
+		@include media-3 {
+			display: grid;
+			grid-template-columns: 2fr 3fr;
+			#copyright {
+				grid-column-start: span 2;
+				grid-row-start: 2;
+			}
+		}
+	}
+}
+
+#socials {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0;
+	justify-items: center;
+	align-items: center;
+	#twitter {
+		grid-column-start: 1;
+	}
+	@include media-1 {
+		display: block;
+	}
+}
