@@ -25,7 +25,7 @@
 	<link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<body class="contact-pg">
 
 	<?php include 'php/header.php'; ?>
 
@@ -33,6 +33,13 @@
 		<?php include 'php/menu.php'; ?>
 
 		<div class="contact-main">
+
+			<div class="contact-hdr">
+				<p>Home</p>
+				<p>/</p>
+				<p>Our Offices</p>
+			</div>
+
 			<h1>Our Offices</h1>
 
 			<div class="office-box">
@@ -43,31 +50,50 @@
 					Cambridge,<br>
 					CB4 0WS</p>
 				<h3>01223 37 57 72</h3>
-				<button>View more</button>
+				<button class="purple">View more</button>
 			</div>
 			<div class="office-box">
-				<h1>Wymondham Office</h1>
+				<h2>Wymondham Office</h2>
 				<p>Unit 15,<br>
 					Penfold Drive,<br>
 					Gateway 11 Business Park,<br>
 					Wymondham, Norfolk,<br>
 					NR18 0WZ</p>
 				<h3>01603 70 40 20</h3>
-				<button>View more</button>
+				<button class="purple">View more</button>
 			</div>
 			<div class="office-box">
-				<h1>Great Yarmouth Office</h1>
+				<h2>Great Yarmouth Office</h2>
 				<p>Suite F23,<br>
 					Beacon Innovation Centre,<br>
 					Beacon Park, Gorleston,<br>
 					Great Yarmouth, Norfolk,<br>
 					NR31 7RA</p>
 				<h3>01493 60 32 04</h3>
-				<button>View more</button>
+				<button class="purple">View more</button>
+			</div>
+
+			<div class="info-box">
+				<h2>Email us on:</h2>
+				<h1>sales@netmatters.com</h1>
+				<h2>Business hours:</h2>
+				<h2>Monday - Friday 07:00 - 18:00</h2>
+				<h2>Out of Hours IT Support</h2>
 			</div>
 
 			<form>
-
+				<label>Your Name</label>
+				<input type="text">
+				<label>Company Name</label>
+				<input type="text">
+				<label>Your Email</label>
+				<input type="text">
+				<label>Your Telephone Number</label>
+				<input type="text">
+				<label>Message</label>
+				<input type="text">
+				<input type="radio">
+				<button>Send enquiry</button>
 			</form>
 		</div>
 

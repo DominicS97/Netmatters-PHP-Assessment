@@ -2458,4 +2458,44 @@ footer #chat {
   #socials {
     display: block;
   }
+}
+
+.contact-pg {
+  color: #333645;
+}
+.contact-pg h1 {
+  color: #fff;
+  font-weight: 500;
+  background-color: #333645;
+}
+
+.contact-main {
+  display: grid;
+}
+
+.contact-hdr {
+  display: flex;
+  flex-direction: row;
+}
+.contact-hdr p:first-of-type {
+  font-weight: bold;
+}
+
+.office-box {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.office-box h2 {
+  color: #333645;
+}
+.office-box h3 {
+  color: #926fb1;
+}
+
+.info-box h2 {
+  color: #333645;
+}
+.info-box h1 {
+  color: #926fb1;
 }/*# sourceMappingURL=styles.css.map */

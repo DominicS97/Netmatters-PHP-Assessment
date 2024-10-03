@@ -1,0 +1,43 @@
+// Contact page styles
+
+.contact-pg {
+	color: $text-dark;
+	h1 {
+		color: $text-white;
+		font-weight: 500;
+		background-color: $text-dark;
+	}
+}
+
+.contact-main {
+	display: grid;
+}
+
+.contact-hdr {
+	display: flex;
+	flex-direction: row;
+	p:first-of-type {
+		font-weight: bold;
+	}
+}
+
+.office-box {
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+	h2 {
+		color: $text-dark;
+	}
+	h3 {
+		color: $purple;
+	}
+}
+
+.info-box {
+	h2 {
+		color: $text-dark;
+	}
+	h1 {
+		color: $purple;
+	}
+}
