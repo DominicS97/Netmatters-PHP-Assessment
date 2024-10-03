@@ -2471,6 +2471,12 @@ footer #chat {
 
 .contact-main {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-full {
+  grid-column-start: span 3;
+  padding: 15px;
 }
 
 .contact-hdr {
@@ -2481,21 +2487,160 @@ footer #chat {
   font-weight: bold;
 }
 
+.office-greater {
+  display: flex;
+  max-width: 1200px;
+  margin-left: calc(50vw - 600px);
+}
+
 .office-box {
   display: flex;
   flex-direction: column;
   margin: 30px;
+  padding-top: 0px;
+  background-color: #ddd;
+  border-radius: 10px 10px 0 0;
+}
+.office-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
 }
 .office-box h2 {
   color: #333645;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.1;
 }
 .office-box h3 {
   color: #926fb1;
+  font-weight: 700;
+  font-size: 1.65rem;
+  line-height: 1.1;
+}
+.office-box p {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+.office-box h1,
+.office-box h2,
+.office-box h3,
+.office-box p {
+  margin-left: 15px;
+  margin-top: 15px;
 }
 
 .info-box h2 {
   color: #333645;
+  font-size: 1rem;
 }
 .info-box h1 {
   color: #926fb1;
+  background-color: #fff;
+  font-size: 1.625rem;
+}
+.info-box h1,
+.info-box h2 {
+  line-height: 1.875rem;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+
+.form-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ddd;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  margin: 30px;
+  padding: 15px;
+}
+.form-box a {
+  text-decoration: none;
+  color: #333645;
+}
+
+.form-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.form-segment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-segment input {
+  width: 80%;
+  height: 30px;
+}
+.form-segment .checkbox-box {
+  width: 20px;
+  height: 20px;
+}
+
+#email-validation {
+  display: none;
+}
+
+.form-plus {
+  display: flex;
+  max-width: 1200px;
+  margin-left: calc(50vw - 650px);
+}
+.form-plus label {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+}
+
+.message {
+  font-weight: bold;
+  position: fixed;
+  z-index: 90;
+  top: 30vh;
+  left: 45vw;
+  background-color: #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 1px #333645;
+}
+
+.message-green {
+  color: green;
+}
+
+.message-red {
+  color: red;
+}
+
+#accordion {
+  cursor: pointer;
+  transition: 0.4s;
+  line-height: 1.875rem;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#accordion:hover,
+.accordion-active {
+  text-decoration: underline;
+}
+
+#panel {
+  display: none;
+  overflow: hidden;
+}
+
+.form-box {
+  width: 70%;
+}
+
+.info-box {
+  width: 30%;
 }/*# sourceMappingURL=styles.css.map */

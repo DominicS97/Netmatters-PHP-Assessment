@@ -13,9 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$marketing = isset($_POST['marketing']) ? $_POST['marketing'] : 0;
 
 	if ($stmt->execute()) {
-		echo '<div class="success-message" style="color: green; font-weight: bold;">Message sent successfully!</div>';
+		echo '<div class="message message-green">Message sent successfully!</div>';
 	} else {
-		echo '<div class="error-message" style="color: red; font-weight: bold;">Error: ' . $stmt->error . '</div>';
+		echo '<div class="message message-red">Error: ' . $stmt->error . '</div>';
 	}
 
 	$stmt->close();
@@ -57,110 +57,129 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		<div class="contact-main">
 
-			<div class="contact-hdr">
+			<div class="contact-hdr contact-full">
 				<p>Home</p>
 				<p>/</p>
 				<p>Our Offices</p>
 			</div>
 
-			<h1>Our Offices</h1>
+			<h1 class="contact-full">Our Offices</h1>
 
-			<div class="office-box">
-				<h2>Cambridge Office</h2>
-				<p>Unit 1.31,<br>
-					St John's Innovation Centre,<br>
-					Cowley Road, Milton,<br>
-					Cambridge,<br>
-					CB4 0WS</p>
-				<h3>01223 37 57 72</h3>
-				<button class="purple">View more</button>
-			</div>
-			<div class="office-box">
-				<h2>Wymondham Office</h2>
-				<p>Unit 15,<br>
-					Penfold Drive,<br>
-					Gateway 11 Business Park,<br>
-					Wymondham, Norfolk,<br>
-					NR18 0WZ</p>
-				<h3>01603 70 40 20</h3>
-				<button class="purple">View more</button>
-			</div>
-			<div class="office-box">
-				<h2>Great Yarmouth Office</h2>
-				<p>Suite F23,<br>
-					Beacon Innovation Centre,<br>
-					Beacon Park, Gorleston,<br>
-					Great Yarmouth, Norfolk,<br>
-					NR31 7RA</p>
-				<h3>01493 60 32 04</h3>
-				<button class="purple">View more</button>
-			</div>
-
-			<div class="info-box">
-				<h2>Email us on:</h2>
-				<h1>sales@netmatters.com</h1>
-				<h2>Business hours:</h2>
-				<h2>Monday - Friday 07:00 - 18:00</h2>
-				<h2>Out of Hours IT Support</h2>
+			<div class="office-greater contact-full">
+				<div class="office-box">
+					<img src="img/cambridge.jpg">
+					<h2>Cambridge Office</h2>
+					<p>Unit 1.31,<br>
+						St John's Innovation Centre,<br>
+						Cowley Road, Milton,<br>
+						Cambridge,<br>
+						CB4 0WS</p>
+					<h3>01223 37 57 72</h3>
+					<button class="purple">View more</button>
+				</div>
+				<div class="office-box">
+					<img src="img/wymondham.jpg">
+					<h2>Wymondham Office</h2>
+					<p>Unit 15,<br>
+						Penfold Drive,<br>
+						Gateway 11 Business Park,<br>
+						Wymondham, Norfolk,<br>
+						NR18 0WZ</p>
+					<h3>01603 70 40 20</h3>
+					<button class="purple">View more</button>
+				</div>
+				<div class="office-box">
+					<img src="img/yarmouth-2.jpg">
+					<h2>Great Yarmouth Office</h2>
+					<p>Suite F23,<br>
+						Beacon Innovation Centre,<br>
+						Beacon Park, Gorleston,<br>
+						Great Yarmouth, Norfolk,<br>
+						NR31 7RA</p>
+					<h3>01493 60 32 04</h3>
+					<button class="purple">View more</button>
+				</div>
 			</div>
 
-			<div class="form-box">
-				<form action="contact-us.php" method="POST">
-					<div class="form-block">
-						<div class="form-segment">
-							<label for="full-name">Your Name</label>
-							<input type="text" name="full-name" id="full-name" required>
+			<div class="form-plus contact-full">
+				<div class="form-box">
+					<form action="contact-us.php" method="POST">
+						<div class="form-block">
+							<div class="form-segment">
+								<label for="full-name">Your Name</label>
+								<input type="text" name="full-name" id="full-name" required>
+							</div>
+							<div class="form-segment">
+								<label for="company-name">Company Name</label>
+								<input type="text" name="company-name" id="company-name">
+							</div>
+						</div>
+						<div class="form-block">
+							<div class="form-segment">
+								<label for="email">Your Email</label>
+								<input type="text" name="email" id="email" required onclick="validateEmail()">
+							</div>
+							<div class="form-segment">
+								<label for="telephone">Your Telephone Number</label>
+								<input type="text" name="telephone" id="telephone" required>
+							</div>
 						</div>
 						<div class="form-segment">
-							<label for="company-name">Company Name</label>
-							<input type="text" name="company-name" id="company-name">
-						</div>
-					</div>
-					<div class="form-block">
-						<div class="form-segment">
-							<label for="email">Your Email</label>
-							<input type="text" name="email" id="email" required>
+							<label for="message">Message</label>
+							<textarea name="message" id="message"
+								required>Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
 						</div>
 						<div class="form-segment">
-							<label for="telephone">Your Telephone Number</label>
-							<input type="text" name="telephone" id="telephone" required>
+							<label class="checkbox" for="input_checkbox">
+								<input type="hidden" name="marketing" value="0">
+								<input type="checkbox" class="checkbox-box" id="input_checkbox" name="marketing"
+									value="1">
+								<span class="checkbox-dummy"></span>
+								<span class="checkbox-txt">
+									Please tick this box if you wish to receive marketing information from us.
+									Please see our
+									<a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+									for more information on how we keep your data safe.
+								</span>
+							</label>
 						</div>
-					</div>
-					<div class="form-segment">
-						<label for="message">Message</label>
-						<textarea name="message" cols="50" rows="10" id="message"
-							required>Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
-					</div>
-					<div class="form-segment">
-						<label class="checkbox" for="input_checkbox">
-							<input type="hidden" name="marketing" value="0">
-							<input type="checkbox" class="checkbox-box" id="input_checkbox" name="marketing" value="1">
-							<span class="checkbox-dummy"></span>
-							<span class="checkbox-txt">
-								Please tick this box if you wish to receive marketing information from us.
-								Please see our
-								<a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
-								for more information on how we keep your data safe.
+						<div class="captcha">
+							<span>
+								This site is protected by reCAPTCHA and the Google
+								<a href="#" target="_blank" rel="noopener noreferrer"><u>Privacy Policy</u></a> and
+								<a href="#" target="_blank" rel="noopener noreferrer"><u>Terms of Service</u></a> apply.
 							</span>
-						</label>
+						</div>
+						<div class="form-send">
+							<button>Send enquiry</button>
+							<small class="helper-text">
+								<span class="text-danger">*</span>
+								Fields Required
+							</small>
+						</div>
+						<div id="email-validation">Email not valid</div>
+					</form>
+				</div>
+
+				<div class="info-box">
+					<h2>Email us on:</h2>
+					<h1>sales@netmatters.com</h1>
+					<h2>Business hours:</h2>
+					<h2>Monday - Friday 07:00 - 18:00</h2>
+					<a id="accordion" onclick="accordion();">Out of Hours IT Support</a>
+					<div id="panel">
+						<p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+
+						<h2>Monday - Friday 18:00 - 22:00</h2>
+						<h2>Saturday 08:00 - 16:00</h2>
+						<h2>Sunday 10:00 - 18:00</h2>
+
+						<p>To log a critical task, you will need to call our main line number and select Option 2 to
+							leave
+							an Out of Hours voicemail. A technician will contact you on the number provided within 45
+							minutes of your call.</p>
 					</div>
-					<div class="captcha">
-						<span>
-							This site is protected by reCAPTCHA and the Google
-							<a href="#" target="_blank" rel="noopener noreferrer"><u>Privacy Policy</u></a> and
-							<a href="#" target="_blank" rel="noopener noreferrer"><u>Terms of Service</u></a> apply.
-						</span>
-					</div>
-					<div class="form-send">
-						<button>Send enquiry</button>
-						<small class="helper-text">
-							<span class="text-danger">*</span>
-							Fields Required
-						</small>
-					</div>
-					<div id="error-message" style="color: red; display: none;"></div>
-					<div id="success-message" style="color: green; display: none;"></div>
-				</form>
+				</div>
 			</div>
 		</div>
 
@@ -175,6 +194,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<script src="./js/navbar.js"></script>
 	<script src="./js/splash.js"></script>
 	<script src="./js/clients.js"></script>
+	<script src="./js/email.js"></script>
 </body>
 
 </html>

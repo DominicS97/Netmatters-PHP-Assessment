@@ -1,6 +1,6 @@
 <header id="header">
     <div class="container" id="header-cont-1">
-        <picture>
+        <picture onclick="window.location.href='index.php'">
             <source type="image/webp" srcset="img/webp/logo_main.webp" />
             <img alt="netmatters logo" src="img/logo_main.png" width="402" height="70" />
         </picture>
