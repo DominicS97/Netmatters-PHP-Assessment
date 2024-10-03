@@ -1,5 +1,7 @@
 # Netmatters-PHP-Assessment
 
-Project for Netmatters PHP Assessment. Copy from HTML/CSS/JS Assessment.
+Documentation for the Netmatters HTML CSS Assessment
 
-<b>Tech:</b> php
+<b>Task:</b> Recreate Netmatters homepage and contact-us page with database integration
+
+<b>Tech:</b> HTML, CSS, SASS, PHP, Self-hosted
