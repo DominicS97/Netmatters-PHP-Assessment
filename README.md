@@ -1,6 +1,6 @@
 # Netmatters-PHP-Assessment
 
-Documentation for the Netmatters HTML CSS Assessment
+Documentation for the Netmatters PHP Assessment
 
 <b>Task:</b> Recreate Netmatters homepage and contact-us page with database integration
 
